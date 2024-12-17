@@ -23,12 +23,14 @@
             <a routerLink="/services">Services</a>
           </li>
           <li class="p-4">
-            <a routerLink="/contact">Contact</a>
+            <a routerLink="/contact">Contact us</a>
           </li>
         </ul>
-        <div class="max-md:hidden">
-            <a routerLink="/sign-in" class="bg-white px-4 py-1.5 rounded-full text-gray-800">Sign up</a>
-        </div>
+        @if (currentRoute != '/sign-in') {
+            <div class="max-lg:hidden">
+                <a routerLink="/sign-in" class="bg-white px-4 py-1.5 rounded-full text-gray-800">Sign up</a>
+            </div>
+        }
       </nav>
     </div>
 
@@ -36,7 +38,7 @@
     <div class="md:ml-[16.666%] md:w-full bg-indigo-100 ">
         <div class="">
             <!-- <h1 class="text-3xl font-bold">Content Section</h1> -->
-            <router-outlet class=""></router-outlet>
+            <router-outlet></router-outlet>
         </div>
     </div>
   </div>
