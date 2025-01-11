@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule , FormBuilder ,FormGroup , Validators, AbstractControlOptions} from "@angular/forms";
-import { lowercaseValidator , uppercaseValidator , passValidator , passMatch} from '../../shared/Validations';
+import { passValidator , passMatch} from '../../shared/Validations';
 @Component({
   selector: 'app-sign-in',
   imports: [ReactiveFormsModule , CommonModule],
